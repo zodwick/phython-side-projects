@@ -16,7 +16,6 @@ def possible_positions(position):
         tem.append(position+i)
     return(list(i for i in tem if i in board))
 
-print(possible_positions(0))
 
 
 board2=[[0, 1, 2, 3, 4, 5, 6, 7],
@@ -27,4 +26,6 @@ board2=[[0, 1, 2, 3, 4, 5, 6, 7],
 [40, 41, 42, 43, 44, 45, 46, 47],
 [48, 49, 50, 51, 52, 53, 54, 55],
 [56, 57, 58, 59, 60, 61, 62, 63]]
+
+
 
