@@ -59,8 +59,7 @@ def pretty(l):
     
 pretty(list(sorted_dict.values()))
 
-for i in x:
-    new_sorted_dict.append(c[i])
+
 
      
         

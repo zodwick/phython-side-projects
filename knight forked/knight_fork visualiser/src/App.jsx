@@ -9,12 +9,12 @@ const squares=[[0, 3, 2, 3, 2, 3, 4, 5],
 [4, 3, 4, 3, 4, 5, 4, 5],
 [5, 4, 5, 4, 5, 4, 5, 6]]
 
-function Square() {
+const list_of_colours=['sqaure zero', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure four', 'sqaure five', 'sqaure three', 'sqaure four', 'sqaure one', 'sqaure two', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure two', 'sqaure one', 'sqaure four', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure four', 'sqaure five', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure two', 'sqaure three', 'sqaure two', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure five', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure five', 'sqaure four', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure three', 'sqaure four', 'sqaure five', 'sqaure four', 'sqaure five', 'sqaure five', 'sqaure four', 'sqaure five', 'sqaure four', 'sqaure five', 'sqaure four', 'sqaure five', 'sqaure six']
+
+function Square({value_index}) {
   return (
     <button
-      className={"square ".concat(squares[3][1].toString())}
-      // style=  "background: rgb(233, 36, 36)"
-    >
+      className={list_of_colours[value_index]}>
     </button>
   );
 }
@@ -23,84 +23,87 @@ export default function Board() {
   return (
     <>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={0} />
+        <Square  value_index={1}/>
+        <Square value_index={2} />
+        <Square value_index={3}/>
+        <Square value_index={4}/>
+        <Square  value_index={5}/>
+        <Square value_index={6} />
+        <Square value_index={7} />
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+        <Square value_index={8}/>
+        <Square value_index={9}/>
+        <Square value_index={10}/>
+        <Square value_index={11}/>
+        <Square value_index={12}/>
+        <Square value_index={13}/>
+        <Square value_index={14}/>
+        <Square value_index={15}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={16}/>
+        <Square value_index={17}/>
+        <Square value_index={18}/>
+        <Square value_index={19}/>
+        <Square value_index={20}/>
+        <Square value_index={21}/>
+        <Square value_index={22}/>
+        <Square value_index={23}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={24}/>
+        <Square value_index={25}/>
+        <Square value_index={26}/>
+        <Square value_index={27}/>
+        <Square value_index={28}/>
+        <Square value_index={29}/>
+        <Square value_index={30}/>
+        <Square value_index={31}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={32}/>
+      <Square value_index={33}/>
+        <Square value_index={34}/>
+        <Square value_index={35}/>
+        <Square value_index={36}/>
+        <Square value_index={37}/>
+        <Square value_index={38}/>
+        <Square value_index={39}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={40}/>
+
+      <Square value_index={41}/>
+        <Square value_index={42}/>
+        <Square value_index={43}/>
+        <Square value_index={44}/>
+        <Square value_index={45}/>
+        <Square value_index={46}/>
+        <Square value_index={47}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+      <Square value_index={48}/>
+
+      <Square value_index={49}/>
+        <Square value_index={50}/>
+        <Square value_index={51}/>
+        <Square value_index={52}/>
+        <Square value_index={53}/>
+        <Square value_index={54}/>
+        <Square value_index={55}/>
       </div>
       <div className="board-row">
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
-        <Square />
+       <Square value_index={56}/>
+       <Square value_index={57}/>
+        <Square value_index={58}/>
+        <Square value_index={59}/>
+        <Square value_index={60}/>
+        <Square value_index={61}/>
+        <Square value_index={62}/>
+        <Square value_index={63}/>
+        
       </div>
     </>
   );

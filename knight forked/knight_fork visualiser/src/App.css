@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: sans-serif;
@@ -43,7 +41,7 @@ code {
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 * {
@@ -56,25 +54,8 @@ body {
   padding: 0;
 }
 
-.square {
-  background: rgb(233, 36, 36);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
 
-.square 2{
-  
-}
+
 .board-row:after {
   clear: both;
   content: '';
@@ -91,4 +72,106 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+
+.zero{
+  background-color: rgb(253 244 224);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.one{ 
+  background-color: rgb(244 193 141);
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;}
+.two{
+  background-color:rgb(244 193 141); 
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;}
+.three{
+  background-color: rgb(205 84 106);
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;}
+.four{
+  
+  background-color: rgb(205 84 106);
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;}
+.five{ 
+  background-color: rgb(129 48 125);
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;}
+.six{
+  background-color: rgb(80 26 121);
+  border: 1px solid #999;
+  /* color: red; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
 }
