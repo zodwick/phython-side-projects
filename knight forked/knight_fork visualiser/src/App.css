@@ -57,8 +57,9 @@ body {
 }
 
 .square {
-  background: #fff;
+  background: rgb(233, 36, 36);
   border: 1px solid #999;
+  /* color: red; */
   float: left;
   font-size: 24px;
   font-weight: bold;
@@ -71,6 +72,9 @@ body {
   width: 34px;
 }
 
+.square 2{
+  
+}
 .board-row:after {
   clear: both;
   content: '';

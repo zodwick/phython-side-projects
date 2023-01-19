@@ -18,7 +18,7 @@ def possible_positions(position):
         tem.append(position+i)
     return(list(i for i in tem if i in board))
 
-print(possible_positions(50))
+print(possible_positions(0))
 
 moves_required=0
 output_dict={start_position:moves_required}
@@ -40,6 +40,11 @@ while (len(output_dict)<64):
 myKeys = list(output_dict.keys())
 myKeys.sort()
 sorted_dict = {i: output_dict[i] for i in myKeys}
+c=['zero','one','two','three','four','five','six']
+new_sorted_dict=[]
+
+        
+
 # print(sorted_dict)
 
 
@@ -53,6 +58,11 @@ def pretty(l):
     
     
 pretty(list(sorted_dict.values()))
+
+for i in x:
+    new_sorted_dict.append(c[i])
+
+     
         
 
 
