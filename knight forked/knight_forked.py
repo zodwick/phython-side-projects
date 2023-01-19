@@ -9,7 +9,6 @@ board=[0, 1, 2, 3, 4, 5, 6, 7,
        60, 61, 62, 63, 64, 65, 66, 67, 
        70, 71, 72, 73, 74, 75, 76, 77]
 
-
 start_position=eval(input("enter starting position "))
 
 def possible_positions(position):
@@ -19,7 +18,7 @@ def possible_positions(position):
         tem.append(position+i)
     return(list(i for i in tem if i in board))
 
-
+print(possible_positions(50))
 
 moves_required=0
 output_dict={start_position:moves_required}
