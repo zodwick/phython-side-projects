@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import ChessBoard from './knighttwo'
+import ChessBoardtwo from './chessbrd'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ChessBoard></ChessBoard>
+    <ChessBoardtwo></ChessBoardtwo>
   </React.StrictMode>,
 )

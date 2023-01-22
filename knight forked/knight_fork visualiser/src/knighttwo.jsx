@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Chess from 'chess.js';
 
-const [board, setBoard] = useState(new Chess());
-const [startSquare, setStartSquare] = useState(null);
+const ChessBoard = () => {
+  const [board, setBoard] = useState([]);
+  const [startSquare, setStartSquare] = useState(null);
 
-const handleClick = event => {
-    const square = event.target.getAttribute('data-square');
-    setStartSquare(square);
+  const possibleMoves = (x, y) => {
+    return [[x + 2, y + 1], [x + 2, y - 1], [x - 2, y + 1], [x - 2, y - 1],
+            [x + 1, y + 2], [x + 1, y - 2], [x - 1, y + 2], [x - 1, y - 2]];
   }
 
   const bfs = (start) => {
@@ -17,33 +17,51 @@ const handleClick = event => {
     while (queue.length > 0) {
       let current = queue.shift();
       visited.add(current);
-      let nextMoves = board.moves({ square: current, verbose: true });
+      let nextMoves = possibleMoves(current[0], current[1]);
       for (let move of nextMoves) {
-        if (!visited.has(move.to)) {
-          queue.push(move.to);
-          visited.add(move.to);
-          distance[move.to] = distance[current] + 1;
+        let x = move[0];
+        let y = move[1];
+        if (!visited.has(move) && x >= 0 && x <= 7 && y >= 0 && y <= 7) {
+          queue.push(move);
+          visited.add(move);
+          distance[move] = distance[current] + 1;
         }
       }
     }
     return distance;
   }
-  const ChessBoard = () => {
-    return (
-      <div>
-        {board.SQUARES.map(square => (
+
+  const handleClick = event => {
+    const square = event.target.getAttribute('data-square');
+    setStartSquare(square);
+  }
+
+  const renderBoard = () => {
+    let rows = [];
+    for (let i = 0; i < 8; i++) {
+      let row = [];
+      for (let j = 0; j < 8; j++) {
+        row.push(
           <div
-            key={square}
-            data-square={square}
+            key={i + "-" + j}
+            data-square={i + "-" + j}
             onClick={handleClick}
             style={{ width: '12.5%', height: '12.5%' }}
           >
-            {square}
-            {startSquare === square ? <p>{bfs(square)}</p> : null}
+            {startSquare === i + "-" + j ? <p>{bfs(square)}</p> : null}
           </div>
-        ))}
-      </div>
-    );
-  };
+        )
+      }
+      rows.push(<div key={i}>{row}</div>)
+    }
+    return rows;
+  }
 
-export default ChessBoard;
+  return (
+    <div>
+      {renderBoard()}
+    </div>
+  );
+};
+
+export default ChessBoard
