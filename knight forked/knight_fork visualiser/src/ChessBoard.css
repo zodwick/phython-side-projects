@@ -24,3 +24,9 @@
     background-color: black;
   }
   
+  .chess-square:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
+  }
+  
