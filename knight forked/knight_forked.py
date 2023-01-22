@@ -1,5 +1,9 @@
 # board showing co-ordinates used in calculation
 
+import datetime
+
+start_time =  datetime.datetime.now()
+
 board=[0, 1, 2, 3, 4, 5, 6, 7, 
        10, 11, 12, 13, 14, 15, 16, 17,
        20, 21, 22, 23, 24, 25, 26, 27, 
@@ -9,8 +13,7 @@ board=[0, 1, 2, 3, 4, 5, 6, 7,
        60, 61, 62, 63, 64, 65, 66, 67, 
        70, 71, 72, 73, 74, 75, 76, 77]
 
-start_position=eval(input("enter starting position "))
-
+start_position=0
 def possible_positions(position):
     num=[8,-8,12,-12,19,-19,21,-21]
     tem=[]  #array for holding all possible positions ie 8 of them
@@ -18,7 +21,6 @@ def possible_positions(position):
         tem.append(position+i)
     return(list(i for i in tem if i in board))
 
-print(possible_positions(0))
 
 moves_required=0
 output_dict={start_position:moves_required}
@@ -34,14 +36,12 @@ while (len(output_dict)<64):
             if x not in list(output_dict.keys()):
                 output_dict[x]=moves_required
                 
-
+# print(output_dict)
 # output_dict is your result, the rest is for sorting the dictionary
 
 myKeys = list(output_dict.keys())
 myKeys.sort()
 sorted_dict = {i: output_dict[i] for i in myKeys}
-c=['zero','one','two','three','four','five','six']
-new_sorted_dict=[]
 
         
 
@@ -63,6 +63,9 @@ pretty(list(sorted_dict.values()))
 
      
         
+end_time = datetime.datetime.now()
 
+execution_time = end_time - start_time
+print("Execution time:", execution_time)
 
 
