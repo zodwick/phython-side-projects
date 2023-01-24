@@ -14,3 +14,6 @@ colour_list=[]
 for i in squares:
     colour_list.append('sqaure '+c[i])
 print(colour_list)
+
+
+#pyhton code to predict ventricular abbreviation from an ecg data set
