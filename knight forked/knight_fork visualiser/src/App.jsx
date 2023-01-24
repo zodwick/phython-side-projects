@@ -14,7 +14,8 @@ export default function Board() {
   return (
    
 <>
-<h1>press the square to set it as inital position of the knight </h1>
+<h1>press a square to set it as the inital 
+ POSITION OF THE KNIGHT </h1>
 <div className='gridview'>
 <button  onClick={() => setstart_pos(0)}>
 {ot_values[start_pos][0]}

@@ -1,11 +1,16 @@
 html{
-  font-family: 'Poppins 100', sans-serif;
+  font-family: 'Poppins ', sans-serif;
+  display: flex;
+  justify-content:center;
+  background-color: rgb(18, 17, 18);
+
 
 }
 h1{
-  display: flex;
-  width: 400px;
-  color: rgb(31, 4, 57);
+  text-align:center;
+  color: rgb(206, 206, 206);
+  width: 650px;
+  font-weight:100;
 
 }
 .gridview{
