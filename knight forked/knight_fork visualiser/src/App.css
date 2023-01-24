@@ -1,7 +1,16 @@
+html{
+  font-family: 'Poppins 100', sans-serif;
 
+}
+h1{
+  display: flex;
+  width: 400px;
+  color: rgb(31, 4, 57);
 
+}
 .gridview{
   position: absolute; 
+  top: 140px;
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -14,7 +23,7 @@
 button{
   color: black;
   background-color: white;
-  font-size: 20px;
+  font-size: 25px;
   border: rgb(0, 0, 0) solid 0.3px;
 
 }
