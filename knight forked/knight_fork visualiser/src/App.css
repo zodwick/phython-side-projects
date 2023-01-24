@@ -1,177 +1,22 @@
 
 
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+.gridview{
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px;
+  width: 450px;
+  height: 450px;
+  display: grid ;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  grid-row: 8;
 }
-
-h1 {
-  margin-top: 0;
-  font-size: 22px;
-}
-
-h2 {
-  margin-top: 0;
+button{
+  color: black;
+  background-color: white;
   font-size: 20px;
-}
+  border: rgb(0, 0, 0) solid 0.3px;
 
-h3 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-h4 {
-  margin-top: 0;
-  font-size: 16px;
-}
-
-h5 {
-  margin-top: 0;
-  font-size: 14px;
-}
-
-h6 {
-  margin-top: 0;
-  font-size: 12px;
-}
-
-code {
-  font-size: 1.2em;
-}
-
-ul {
-  padding-left: 0px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
-
-
-.board-row:after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
-.status {
-  margin-bottom: 10px;
-}
-.game {
-  display: flex;
-  flex-direction: row;
-}
-
-.game-info {
-  margin-left: 20px;
-}
-
-.zero{
-  background-color: rgb(253 244 224);
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
-}
-
-.one{ 
-  background-color: rgb(244 193 141);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;}
-.two{
-  background-color:rgb(244 193 141); 
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;}
-.three{
-  background-color: rgb(205 84 106);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;}
-.four{
-  
-  background-color: rgb(205 84 106);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;}
-.five{ 
-  background-color: rgb(129 48 125);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;}
-.six{
-  background-color: rgb(80 26 121);
-  border: 1px solid #999;
-  /* color: red; */
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  height: 34px;
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  width: 34px;
 }

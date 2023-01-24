@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import './App.css'
+import './App.css'
 
 
 
@@ -13,11 +13,202 @@ export default function Board() {
 
   return (
    
-    <>
-    <button  onClick={() => setstart_pos(0)}>
-    {ot_values[start_pos][0]}
-    </button>
-     
-    </>
+<>
+<div className='gridview'>
+<button  onClick={() => setstart_pos(0)}>
+{ot_values[start_pos][0]}
+</button>
+<button  onClick={() => setstart_pos(1)}>
+{ot_values[start_pos][1]}
+</button>
+<button  onClick={() => setstart_pos(2)}>
+{ot_values[start_pos][2]}
+</button>
+<button  onClick={() => setstart_pos(3)}>
+{ot_values[start_pos][3]}
+</button>
+<button  onClick={() => setstart_pos(4)}>
+{ot_values[start_pos][4]}
+</button>
+<button  onClick={() => setstart_pos(5)}>
+{ot_values[start_pos][5]}
+</button>
+<button  onClick={() => setstart_pos(6)}>
+{ot_values[start_pos][6]}
+</button>
+<button  onClick={() => setstart_pos(7)}>
+{ot_values[start_pos][7]}
+</button>
+<button  onClick={() => setstart_pos(8)}>
+{ot_values[start_pos][8]}
+</button>
+<button  onClick={() => setstart_pos(9)}>
+{ot_values[start_pos][9]}
+</button>
+<button  onClick={() => setstart_pos(10)}>
+{ot_values[start_pos][10]}
+</button>
+<button  onClick={() => setstart_pos(11)}>
+{ot_values[start_pos][11]}
+</button>
+<button  onClick={() => setstart_pos(12)}>
+{ot_values[start_pos][12]}
+</button>
+<button  onClick={() => setstart_pos(13)}>
+{ot_values[start_pos][13]}
+</button>
+<button  onClick={() => setstart_pos(14)}>
+{ot_values[start_pos][14]}
+</button>
+<button  onClick={() => setstart_pos(15)}>
+{ot_values[start_pos][15]}
+</button>
+<button  onClick={() => setstart_pos(16)}>
+{ot_values[start_pos][16]}
+</button>
+<button  onClick={() => setstart_pos(17)}>
+{ot_values[start_pos][17]}
+</button>
+<button  onClick={() => setstart_pos(18)}>
+{ot_values[start_pos][18]}
+</button>
+<button  onClick={() => setstart_pos(19)}>
+{ot_values[start_pos][19]}
+</button>
+<button  onClick={() => setstart_pos(20)}>
+{ot_values[start_pos][20]}
+</button>
+<button  onClick={() => setstart_pos(21)}>
+{ot_values[start_pos][21]}
+</button>
+<button  onClick={() => setstart_pos(22)}>
+{ot_values[start_pos][22]}
+</button>
+<button  onClick={() => setstart_pos(23)}>
+{ot_values[start_pos][23]}
+</button>
+<button  onClick={() => setstart_pos(24)}>
+{ot_values[start_pos][24]}
+</button>
+<button  onClick={() => setstart_pos(25)}>
+{ot_values[start_pos][25]}
+</button>
+<button  onClick={() => setstart_pos(26)}>
+{ot_values[start_pos][26]}
+</button>
+<button  onClick={() => setstart_pos(27)}>
+{ot_values[start_pos][27]}
+</button>
+<button  onClick={() => setstart_pos(28)}>
+{ot_values[start_pos][28]}
+</button>
+<button  onClick={() => setstart_pos(29)}>
+{ot_values[start_pos][29]}
+</button>
+<button  onClick={() => setstart_pos(30)}>
+{ot_values[start_pos][30]}
+</button>
+<button  onClick={() => setstart_pos(31)}>
+{ot_values[start_pos][31]}
+</button>
+<button  onClick={() => setstart_pos(32)}>
+{ot_values[start_pos][32]}
+</button>
+<button  onClick={() => setstart_pos(33)}>
+{ot_values[start_pos][33]}
+</button>
+<button  onClick={() => setstart_pos(34)}>
+{ot_values[start_pos][34]}
+</button>
+<button  onClick={() => setstart_pos(35)}>
+{ot_values[start_pos][35]}
+</button>
+<button  onClick={() => setstart_pos(36)}>
+{ot_values[start_pos][36]}
+</button>
+<button  onClick={() => setstart_pos(37)}>
+{ot_values[start_pos][37]}
+</button>
+<button  onClick={() => setstart_pos(38)}>
+{ot_values[start_pos][38]}
+</button>
+<button  onClick={() => setstart_pos(39)}>
+{ot_values[start_pos][39]}
+</button>
+<button  onClick={() => setstart_pos(40)}>
+{ot_values[start_pos][40]}
+</button>
+<button  onClick={() => setstart_pos(41)}>
+{ot_values[start_pos][41]}
+</button>
+<button  onClick={() => setstart_pos(42)}>
+{ot_values[start_pos][42]}
+</button>
+<button  onClick={() => setstart_pos(43)}>
+{ot_values[start_pos][43]}
+</button>
+<button  onClick={() => setstart_pos(44)}>
+{ot_values[start_pos][44]}
+</button>
+<button  onClick={() => setstart_pos(45)}>
+{ot_values[start_pos][45]}
+</button>
+<button  onClick={() => setstart_pos(46)}>
+{ot_values[start_pos][46]}
+</button>
+<button  onClick={() => setstart_pos(47)}>
+{ot_values[start_pos][47]}
+</button>
+<button  onClick={() => setstart_pos(48)}>
+{ot_values[start_pos][48]}
+</button>
+<button  onClick={() => setstart_pos(49)}>
+{ot_values[start_pos][49]}
+</button>
+<button  onClick={() => setstart_pos(50)}>
+{ot_values[start_pos][50]}
+</button>
+<button  onClick={() => setstart_pos(51)}>
+{ot_values[start_pos][51]}
+</button>
+<button  onClick={() => setstart_pos(52)}>
+{ot_values[start_pos][52]}
+</button>
+<button  onClick={() => setstart_pos(53)}>
+{ot_values[start_pos][53]}
+</button>
+<button  onClick={() => setstart_pos(54)}>
+{ot_values[start_pos][54]}
+</button>
+<button  onClick={() => setstart_pos(55)}>
+{ot_values[start_pos][55]}
+</button>
+<button  onClick={() => setstart_pos(56)}>
+{ot_values[start_pos][56]}
+</button>
+<button  onClick={() => setstart_pos(57)}>
+{ot_values[start_pos][57]}
+</button>
+<button  onClick={() => setstart_pos(58)}>
+{ot_values[start_pos][58]}
+</button>
+<button  onClick={() => setstart_pos(59)}>
+{ot_values[start_pos][59]}
+</button>
+<button  onClick={() => setstart_pos(60)}>
+{ot_values[start_pos][60]}
+</button>
+<button  onClick={() => setstart_pos(61)}>
+{ot_values[start_pos][61]}
+</button>
+<button  onClick={() => setstart_pos(62)}>
+{ot_values[start_pos][62]}
+</button>
+<button  onClick={() => setstart_pos(63)}>
+{ot_values[start_pos][63]}
+</button>
+</div>
+
+</>
   );
 }
