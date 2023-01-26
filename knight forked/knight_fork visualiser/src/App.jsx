@@ -1,6 +1,11 @@
 import { useState } from 'react';
 import './App.css'
+function Img(){
+  return(
+    <img src="knight_fork visualiser\dist\vite.svg" alt="Girl in a jacket" width="10px"/>
 
+  )
+}
 
 
 
@@ -18,7 +23,8 @@ export default function Board() {
  POSITION OF THE KNIGHT </h1>
 <div className='gridview'>
 <button className={'_'+ot_values[start_pos][0]} onClick={() => setstart_pos(0)}>
-{ot_values[start_pos][0]}
+{ot_values[start_pos][0]==0?<Img></Img>
+:ot_values[start_pos][0]}
 </button>
 <button className={'_'+ot_values[start_pos][1]} onClick={() => setstart_pos(1)}>
 {ot_values[start_pos][1]}
