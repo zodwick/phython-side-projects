@@ -66,3 +66,9 @@ button:hover{
   background-color:rgb(232 73 49);
 }
 
+.siderbar{
+  position: absolute;
+  top: 100px;
+  height: 30px;
+  width: 30px;
+}

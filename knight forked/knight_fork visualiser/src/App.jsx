@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './App.css'
-
-
+import IconInstagram from './components/icons/instagram'
+import IconLinkedin from './components/icons/linkedin';
+import IconGitHub from './components/icons/github';
 
 
 
@@ -209,6 +210,18 @@ export default function Board() {
 <button className={'_'+ot_values[start_pos][63]} onClick={() => setstart_pos(63)}>
 {ot_values[start_pos][63]}
 </button>
+</div>
+<div className='siderbar'>
+  <li>
+  <a href="http://github.com/zodwick">
+<IconGitHub></IconGitHub>  </a>
+  <a href="https://www.linkedin.com/in/anand2002/">
+    <IconLinkedin></IconLinkedin>
+  </a>
+  <a href="https://www.instagram.com/zodwick_/?igshid=YmMyMTA2M2Y%3D">
+    <IconInstagram></IconInstagram>
+  </a>
+  </li>
 </div>
 
 
