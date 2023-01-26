@@ -71,17 +71,20 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  top:584px;
-  left: 960px;
+  top:484px;
+  left: 70%;
 }
 
 li {
-  float: left;
   padding: 10px;
 }
 
 li a {
   color: rgb(255, 255, 255);
   padding: 10px;
+}
+
+li a :hover{
+  color: aqua;
 }
 
