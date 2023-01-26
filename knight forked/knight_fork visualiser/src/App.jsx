@@ -211,18 +211,23 @@ export default function Board() {
 {ot_values[start_pos][63]}
 </button>
 </div>
-<div className='siderbar'>
+<ul className='siderbar'>
   <li>
   <a href="http://github.com/zodwick">
-<IconGitHub></IconGitHub>  </a>
-  <a href="https://www.linkedin.com/in/anand2002/">
-    <IconLinkedin></IconLinkedin>
-  </a>
-  <a href="https://www.instagram.com/zodwick_/?igshid=YmMyMTA2M2Y%3D">
-    <IconInstagram></IconInstagram>
+  <IconGitHub></IconGitHub> 
   </a>
   </li>
-</div>
+  <li>
+  <a href="https://www.linkedin.com/in/anand2002/">
+  <IconLinkedin></IconLinkedin>
+  </a>
+  </li>
+  <li>
+  <a href="https://www.instagram.com/zodwick_/?igshid=YmMyMTA2M2Y%3D">
+  <IconInstagram></IconInstagram>
+  </a>
+  </li>
+</ul>
 
 
 </>
