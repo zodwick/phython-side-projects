@@ -33,12 +33,27 @@ button{
   cursor: pointer;
 }
 button:hover{
-  background-color: aliceblue;
+  filter: brightness(120%);
 }
-
+._0{
+  background-color: white;
+}
+._1{
+  background-color: rgb(233 253 174);
+}
+._2{
+  background-color: rgb(211 251 94)  ;
+}
 ._3{
-  background-color: brown;
+  background-color:rgb(255 253 99);
 }
-.two{
-  background-color: aqua;
+._4{
+  background-color: rgb(247 203 83);
+}
+._5{
+  background-color: rgb(239 154 67);
+
+}
+._6{
+  background-color:rgb(232 73 49);
 }
