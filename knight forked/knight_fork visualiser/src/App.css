@@ -21,7 +21,6 @@ h1{
   margin-left: auto; 
   margin-right: auto; 
   width: 450px;
-  height: 450px;
   display: grid ;
   grid-template-columns: auto auto auto auto auto auto auto auto;
   /* resize: both;
@@ -35,6 +34,11 @@ button{
   font-size: 25px;
   border: rgb(0, 0, 0) solid 0.3px;
   cursor: pointer;
+  margin: 0;padding: 0;
+  width: 60px;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
 }
 button:hover{
   filter: brightness(120%);
@@ -61,3 +65,4 @@ button:hover{
 ._6{
   background-color:rgb(232 73 49);
 }
+
