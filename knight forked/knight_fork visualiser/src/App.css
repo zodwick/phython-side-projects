@@ -23,9 +23,6 @@ h1{
   width: 450px;
   display: grid ;
   grid-template-columns: auto auto auto auto auto auto auto auto;
-  /* resize: both;
-  overflow:auto;
-  height: same-as-width */
 
 }
 button{

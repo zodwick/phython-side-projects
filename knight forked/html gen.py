@@ -6,3 +6,5 @@
 # for i in range(0,64):
 #     print(aa.replace('0',str(i)))
 
+l=[i for i in range(0,64)]
+print(l)
