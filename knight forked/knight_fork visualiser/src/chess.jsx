@@ -17,21 +17,25 @@ export default function Board() {
   ];
 
   const squares = li.map((number) => (
-    <button
+    <button 
       className={"_" + ot_values[start_pos][number]}
       onClick={() => setstart_pos(number)}
     >
       {ot_values[start_pos][number]}
     </button>
+    
   ));
   console.log(squares);
 
   return (
     <>
+    <div className="mainel">
       <h1>press a square to set it as the inital POSITION OF THE KNIGHT </h1>
+      <div className="maincol">
+      <div className="invisible"></div>
       <div className="gridview">{squares}</div>
 
-      <ul className="siderbar">
+      <ul className="sidebar">
         <li>
           <a href="http://github.com/zodwick" target="_blank" rel="noopener noreferrer">
             <IconGitHub></IconGitHub>
@@ -48,6 +52,8 @@ export default function Board() {
           </a>
         </li>
       </ul>
+      </div>
+      </div>
     </>
   );
 }

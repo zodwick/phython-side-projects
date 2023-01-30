@@ -3,37 +3,45 @@ html{
   display: flex;
   justify-content:center;
   background-color: rgb(18, 17, 18);
+  font-size: 2.2vh;
 
 
 }
 h1{
   text-align:center;
   color: rgb(206, 206, 206);
-  width: 650px;
+  width: 20em;
   font-weight:100;
 
+
+}
+
+
+.maincol{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  
+  
 }
 .gridview{
-  position: absolute; 
-  top: 140px;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 450px;
   display: grid ;
   grid-template-columns: auto auto auto auto auto auto auto auto;
 
 }
+
+
 button{
   color: black;
   background-color: white;
-  font-size: 25px;
+  font-size: 1.8rem;
   border: rgb(0, 0, 0) solid 0.3px;
   cursor: pointer;
-  margin: 0;padding: 0;
-  width: 60px;
-  height: 60px;
+  margin: 0;
+  padding: 0;
+  width: 2.4em;
+  height: 2.4em;
   margin: 0px;
   padding: 0px;
 }
@@ -63,14 +71,6 @@ button:hover{
   background-color:rgb(232 73 49);
 }
 
-ul {
-  position: absolute;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top:484px;
-  left: 70%;
-}
 
 li {
   padding: 10px;
@@ -85,3 +85,18 @@ li a :hover{
   color: aqua;
 }
 
+.mainel{
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0;
+  padding: 0 0.8em;
+}
+.invisible{
+  width: 4em;
+}
